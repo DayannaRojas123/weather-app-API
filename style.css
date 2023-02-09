@@ -1,0 +1,72 @@
+*{
+    padding:0;
+    box-sizing:border-box;
+    margin:0;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+#body{
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:max-content;
+    grid-template-rows: max-content;
+    grid-template-areas: " titulo " " nav " " main " " main " " main " " main ";
+    background-color: aqua;
+    align-content: center;
+    justify-items: center;
+}
+#main{
+    display: grid;
+    grid-template-areas: "seccion1 seccion4" "seccion2 seccion4" "seccion3 seccion4" "seccion5 seccion4" ;
+    background-color: aquamarine;
+    margin: 20px;
+    width: 250px ;
+    border-radius: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+#form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#titulo{
+    grid-area: titulo;
+}
+#header{
+    margin: 20px;
+}
+#nav{
+    grid-area: nav;
+    background-color: aquamarine;
+    height: 40px;
+    width: 250px ;
+    padding: 10px;
+    border-radius: 20px;
+}
+#seccion1{
+    grid-area: seccion1;
+}
+#seccion2{
+    grid-area: seccion2;
+}
+#seccion3{
+    grid-area: seccion3;
+}
+#seccion4{
+    grid-area: seccion4;
+}
+#seccion5{
+    grid-area: seccion5;
+}
+#footer{
+    text-align:center;
+    opacity:0.5;
+    width:100%;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
