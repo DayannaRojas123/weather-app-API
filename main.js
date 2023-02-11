@@ -69,23 +69,3 @@ function mostrarinfo(res) {
 
 }
 
-
-function tipospokemon(element, pokemon) {
-
-
-   let tipo = document.getElementById('tipos')
-
-   tipo.innerHTML = ''
-
-   pokemon.types.forEach(element => {
-
-
-      let tiposs = document.createElement('span')
-
-
-      tiposs.textContent = element.type.name
-
-
-      tipo.appendChild(tiposs)
-   });
-}
